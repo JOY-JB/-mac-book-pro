@@ -30,8 +30,8 @@
                         US English
                     </p>
                 </header>
-                <!-- customize section -->
-                <section>
+                <!-- Memory section -->
+                <section class="pricing">
                     <h5 class="text-2xl font-semibold py-2">Memory</h5>
                     <button id="memoryEight"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">8GB
@@ -40,24 +40,26 @@
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">16GB
                         unified memory</button>
                 </section>
-                <div class="">
+                <!-- Storage section -->
+                <div class="pricing">
                     <h5 class="text-2xl font-semibold py-2">Storage</h5>
-                    <button
+                    <button id="storage256GB"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">256GB
                         SSD storage</button>
-                    <button
+                    <button id="storage512GB"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">512GB
                         SSD storage</button>
-                    <button
+                    <button id="storage1TB"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">1TB
                         SSD storage</button>
                 </div>
-                <div class="">
+                <!-- delivery option -->
+                <div class="pricing">
                     <h5 class="text-2xl font-semibold py-2">Choose your delivery option</h5>
-                    <button
+                    <button id="shippingFree"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">Friday,
                         Aug 25 FREE Prime Delivery</button>
-                    <button
+                    <button id="shipping20"
                         class="bg-transparent hover:bg-gray-500 font-semibold hover:text-white py-1 px-3 border border-gray-500 hover:border-transparent rounded">Friday,
                         Aug 21 Delivery charge $20</button>
                 </div>
@@ -65,45 +67,47 @@
                 <section class="mt-12 font-bold w-6/12">
                     <div class="flex justify-between">
                         <h5 class="py-2">Best Price</h5>
-                        <h5 class="py-2">$1299</h5>
+                        <h5 class="py-2">$<span id="bestPrice">1299</span></h5>
                     </div>
                     <hr>
                     <div class="flex justify-between">
                         <h5 class="py-2">Extra Memory Cost</h5>
-                        <h5 class="py-2">$000</h5>
+                        <h5 class="py-2">$<span id="memoryCost">0</span></h5>
                     </div>
                     <hr>
                     <div class="flex justify-between">
                         <h5 class="py-2">Extra Storage Cost</h5>
-                        <h5 class="py-2">$0000</h5>
+                        <h5 class="py-2">$<span id="storageCost">0</span></h5>
                     </div>
                     <hr>
                     <div class="flex justify-between">
                         <h5 class="py-2">Delivery charge</h5>
-                        <h5 class="py-2">$00</h5>
+                        <h5 class="py-2">$<span id="shippingCost">0</span></h5>
                     </div>
                     <hr class="border-t-2 border-black">
                     <div class="flex justify-between">
                         <h5 class="py-2">Total Price:</h5>
-                        <h5 class="py-2">$000000</h5>
+                        <h5 class="py-2">$<span id="subTotal">1299</span> </h5>
                     </div>
                 </section>
 
                 <!-- promo section -->
                 <section>
                     <p>Add Pomo code</p>
-                    <input class="border rounded" type="text">
-                    <button class="bg-red-600 py-1 px-4 rounded text-white">Apply</button>
+                    <input id="promoInput" class="border rounded" type="text">
+                    <button id="promobtn" class="bg-red-600 py-1 px-4 rounded text-white">Apply</button>
                 </section>
             </section>
         </div>
         <!-- final total footer -->
         <footer class="mt-6">
             <hr class="border-t-2">
-            <h1 class="text-4xl font-semibold text-center mt-4 mb-2">Total: $1299</h1>
+            <h1 class="text-4xl font-semibold text-center mt-4 mb-2">Total: $<span id="finalTotal">1299</span></h1>
         </footer>
     </main>
 
+
+    <script src="js/pricing.js"></script>
 </body>
 
 </html>
